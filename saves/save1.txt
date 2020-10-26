@@ -1,0 +1,4 @@
+Elimination Combat1 2 slime 2 0 Entity gate1-2 
+Elimination Combat2 2 orc 4 0 Entity gate2-3
+Elimination Combat3 2 bossOrc 1 0 Entity victory
+#
