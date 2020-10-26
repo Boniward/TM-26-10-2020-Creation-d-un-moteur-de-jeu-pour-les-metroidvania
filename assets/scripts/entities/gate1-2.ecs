@@ -1,0 +1,11 @@
+import
+[
+"assets/scripts/entities/schema.ecs",
+"assets/scripts/entities/gate.ecs"
+]
+
+entity [gate1_2 : Gate]
+{
+    component <transform>{x = 23 y = 6}
+    component <gate>{destination = "level2" x = 3 y = 3}
+}

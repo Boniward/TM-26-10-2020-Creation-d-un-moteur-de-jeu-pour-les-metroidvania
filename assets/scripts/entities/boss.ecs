@@ -1,0 +1,52 @@
+asset <texture> "boss.png"
+
+model [Boss]
+{
+    component <information>
+    {
+        id = "boss"
+        type = "enemy"
+    }
+    component <transform>
+    {
+        w = 128
+        h = 128
+        ay = 0.4
+    }
+    component <collider>
+    {
+        w = 53
+        h = 32
+    }
+    component <movement>
+    {
+        speed = 1
+    }
+    component <statistics>
+    {
+        hp = 1000
+        dmg = -50
+    }
+    component <sprite>
+    {
+        name = "boss-texture"
+        w = 64
+        h = 64
+        speed = 200
+        frames = @4@4&6
+    }
+    component <attack>
+    {
+        x = 64
+        y = 32
+        w = 56
+        h = 64
+	frame = 4
+        cooldown = 400
+    }
+    component <advancedEnemy>
+    {
+        w = 10
+        h = 2
+    }
+}

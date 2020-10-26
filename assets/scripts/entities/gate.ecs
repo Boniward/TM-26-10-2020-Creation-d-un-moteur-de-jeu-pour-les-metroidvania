@@ -1,0 +1,27 @@
+asset <texture> "door.png"
+
+model [Gate]
+{
+    component <information>
+    {
+        id = "gate"
+        type = "gate"
+    }
+    component <transform>
+    {
+        w = 32
+        h = 32
+    }
+    component <collider>
+    {
+        w = 2
+        h = 0
+    }
+    component <sprite>
+    {
+        name = "door-texture"
+        w = 32
+        h = 32
+    }
+    component <gate>
+}

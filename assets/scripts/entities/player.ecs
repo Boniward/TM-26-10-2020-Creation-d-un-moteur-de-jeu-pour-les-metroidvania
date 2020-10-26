@@ -1,0 +1,48 @@
+asset <texture> "Ketill.png"
+
+model [Player]
+{
+    component <information>
+    {
+        id = "player"
+        type = "player"
+    }
+    component <transform>
+    {
+        w = 64
+        h = 64
+        ay = 0.4
+    }
+    component <statistics>
+    {
+        hp = 500
+        mp = 50
+        dmg = -100
+    }
+    component <movement>
+    {
+        speed = 2
+    }
+    component <collider>
+    {
+        w = 22
+        h = 16
+    }
+    component <sprite>
+    {
+        name = "Ketill-texture"
+        w = 64
+        h = 64
+        frames = @4@4&4&4&4
+    }
+    component <attack>
+    {
+        x = 32
+        y = 32
+        w = 16
+        h = 16
+        frame = 2
+        cooldown = 2000
+    }
+    component <keyboard>
+}

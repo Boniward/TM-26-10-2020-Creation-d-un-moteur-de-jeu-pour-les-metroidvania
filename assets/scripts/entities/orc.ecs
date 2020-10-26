@@ -1,0 +1,52 @@
+asset <texture> "orc.png"
+
+model [Orc]
+{
+    component <information>
+    {
+        id = "orc"
+        type = "enemy"
+    }
+    component <transform>
+    {
+        w = 64
+        h = 64
+        ay = 0.4
+    }
+    component <collider>
+    {
+        w = 23
+        h = 16
+    }
+    component <movement>
+    {
+        speed = 1
+    }
+    component <statistics>
+    {
+        hp = 200
+        dmg = -20
+    }
+    component <sprite>
+    {
+        name = "orc-texture"
+        w = 64
+        h = 64
+        speed = 200
+        frames = @4@4&5
+    }
+    component <attack>
+    {
+        x = 41
+        y = 28
+        w = 12
+        h = 7
+	frame = 2
+        cooldown = 400
+    }
+    component <advancedEnemy>
+    {
+        w = 4
+        h = 2
+    }
+}

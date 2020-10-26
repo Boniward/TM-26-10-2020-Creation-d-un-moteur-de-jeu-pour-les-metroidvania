@@ -1,0 +1,48 @@
+// #### -Level 2- ####
+
+// matériel nécessaire pour le niveau
+import
+[
+"assets/scripts/entities/schema.ecs",
+"assets/scripts/entities/player.ecs",
+"assets/scripts/entities/slime.ecs",
+"assets/scripts/entities/pikes.ecs",
+"assets/scripts/entities/gate.ecs",
+"assets/scripts/entities/orc.ecs"
+]
+
+// Création de la map
+map ["level2.map" : "tileset_01.png"]
+
+// Création des entités
+entity [player : Player]{component <transform>{x = 3 y = 3}}
+
+entity [pikes1 : Pikes]{component <transform>{x = 12 y = 15}}
+entity [pikes2 : Pikes]{component <transform>{x = 13 y = 15}}
+entity [pikes3 : Pikes]{component <transform>{x = 14 y = 15}}
+entity [pikes4 : Pikes]{component <transform>{x = 15 y = 15}}
+entity [pikes5 : Pikes]{component <transform>{x = 16 y = 15}}
+entity [pikes6 : Pikes]{component <transform>{x = 17 y = 15}}
+entity [pikes7 : Pikes]{component <transform>{x = 18 y = 15}}
+entity [pikes8 : Pikes]{component <transform>{x = 19 y = 15}}
+entity [pikes9 : Pikes]{component <transform>{x = 20 y = 15}}
+entity [pikes10 : Pikes]{component <transform>{x = 21 y = 15}}
+entity [pikes11 : Pikes]{component <transform>{x = 22 y = 15}}
+entity [pikes12 : Pikes]{component <transform>{x = 23 y = 15}}
+entity [pikes13 : Pikes]{component <transform>{x = 24 y = 15}}
+entity [pikes14 : Pikes]{component <transform>{x = 25 y = 15}}
+entity [pikes15 : Pikes]{component <transform>{x = 26 y = 15}}
+entity [pikes16 : Pikes]{component <transform>{x = 27 y = 15}}
+
+entity [pikes17 : Pikes]{component <transform>{x = 30 y = 5}}
+entity [pikes18 : Pikes]{component <transform>{x = 31 y = 5}}
+entity [pikes19 : Pikes]{component <transform>{x = 32 y = 5}}
+
+entity [pikes20 : Pikes]{component <transform>{x = 39 y = 10}}
+entity [pikes21 : Pikes]{component <transform>{x = 40 y = 10}}
+
+entity [orc1 : Orc]{component <transform>{x = 12 y = 7}}
+entity [orc2 : Orc]{component <transform>{x = 3 y = 13}}
+entity [orc3 : Orc]{component <transform>{x = 56 y = 9}}
+entity [orc4 : Orc]{component <transform>{x = 43 y = 3}}
+entity [orc5 : Orc]{component <transform>{x = 59 y = 3}}

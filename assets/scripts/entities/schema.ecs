@@ -1,0 +1,91 @@
+schema
+{
+    component <information>
+    {
+        value <str> id = ""
+        value <str> type = ""
+    }
+    component <transform>
+    {
+        value <int> x = 0
+        value <int> y = 0
+        value <uint> w = 0
+        value <uint> h = 0
+        value <float> vx = 0.0
+        value <float> vy = 0.0
+        value <float> ax = 0.0
+        value <float> ay = 0.0
+    }
+    component <statistics>
+    {
+        value <int> hp = 0
+        value <int> mp = 0
+        value <int> dmg = 0
+    }
+    component <movement>
+    {
+        value <uint> speed = 0
+    }
+    component <collider>
+    {
+        value <uint> w = 0
+        value <uint> h = 0
+    }
+    component <sprite>
+    {
+        value <str> name = ""
+        value <uint> w = 0
+        value <uint> h = 0
+        value <bool> fixed = false
+        value <uint> speed = 100
+        value <spr> frames = #1
+    }
+    component <keyboard>
+    {
+        value <uint> up  = 26
+        value <uint> down = 22
+        value <uint> left = 4
+        value <uint> right = 7
+        value <uint> sprint = 225
+        value <uint> attack = 8
+        value <uint> action = 44
+    }
+    component <textLabel>
+    {
+        value <str> text = ""
+        value <str> fontName = ""
+        value <int> size = 1
+        value <bool> fixed = false
+        value <int> r = 256
+        value <int> g = 256
+        value <int> b = 256
+        value <int> a = 256
+    }
+    component <basicTrap>
+    component <basicEnemy>
+    {
+        value <int> start = 0
+        value <int> distance = 0
+        value <int> speed = 1
+    }
+    component <advancedEnemy>
+    {
+        value <int> w = 0
+        value <int> h = 0
+    }
+    component <attack>
+    {
+        value <int> x = 1
+        value <int> y = 2
+        value <int> w = 3
+        value <int> h = 4
+        value <uint> frame = 5
+        value <uint> cooldown = 6
+    }
+    component <gate>
+    {
+        value <str> destination = ""
+        value <uint> x = 0
+        value <uint> y = 0
+    }
+}

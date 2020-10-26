@@ -1,0 +1,34 @@
+// #### -Level 3- ####
+
+// matériel nécessaire pour le niveau
+import
+[
+"assets/scripts/entities/schema.ecs",
+"assets/scripts/entities/player.ecs",
+"assets/scripts/entities/boss.ecs",
+"assets/scripts/entities/pikes.ecs"
+]
+
+// Création de la map
+map ["level3.map" : "tileset_01.png"]
+
+// Création des entités
+entity [player : Player]{component <transform>{x = 5 y = 4}}
+
+entity [pikes1 : Pikes]{component <transform>{x = 1 y = 6}}
+entity [pikes2 : Pikes]{component <transform>{x = 2 y = 6}}
+entity [pikes3 : Pikes]{component <transform>{x = 3 y = 6}}
+entity [pikes4 : Pikes]{component <transform>{x = 4 y = 6}}
+entity [pikes5 : Pikes]{component <transform>{x = 5 y = 6}}
+entity [pikes6 : Pikes]{component <transform>{x = 6 y = 6}}
+entity [pikes7 : Pikes]{component <transform>{x = 7 y = 6}}
+entity [pikes8 : Pikes]{component <transform>{x = 8 y = 6}}
+entity [pikes9 : Pikes]{component <transform>{x = 9 y = 6}}
+entity [pikes10 : Pikes]{component <transform>{x = 10 y = 6}}
+entity [pikes11 : Pikes]{component <transform>{x = 11 y = 6}}
+entity [pikes12 : Pikes]{component <transform>{x = 12 y = 6}}
+entity [pikes13 : Pikes]{component <transform>{x = 13 y = 6}}
+entity [pikes14 : Pikes]{component <transform>{x = 14 y = 6}}
+entity [pikes15 : Pikes]{component <transform>{x = 15 y = 6}}
+
+entity [boss : Boss]{component <transform>{x = 12 y = 4}}

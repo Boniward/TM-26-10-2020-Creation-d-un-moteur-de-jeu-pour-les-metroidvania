@@ -1,0 +1,39 @@
+asset <texture> "slime.png"
+
+model [Slime]
+{
+    component <information>
+    {
+        id = "slime"
+        type = "enemy"
+    }
+    component <transform>
+    {
+        w = 16
+        h = 16
+        ay = 0.4
+    }
+    component <statistics>
+    {
+        hp = 20
+        dmg = -10
+    }
+    component <movement>
+    {
+        speed = 1
+    }
+    component <collider>
+    component <sprite>
+    {
+        name = "slime-texture"
+        w = 16
+        h = 16
+        frames = @4
+    }
+    component <attack>
+    {
+        w = 16
+        h = 16
+    }
+    component <basicEnemy>
+}

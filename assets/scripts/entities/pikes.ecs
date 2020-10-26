@@ -1,0 +1,37 @@
+asset <texture> "pikes.png"
+
+model [Pikes]
+{
+    component <attack>
+    {
+        w = 32
+        h = 32
+    }
+    component <information>
+    {
+        id = "pikes"
+        type = "trap"
+    }
+    component <transform>
+    {
+        w = 32
+        h = 32
+    }
+    component <collider>
+    component <statistics>
+    {
+        dmg = -10
+    }
+    component <sprite>
+    {
+        name = "pikes-texture"
+        w = 32
+        h = 32
+    }
+    component <basicTrap>
+    component <attack>
+    {
+        w = 32
+        h = 32
+    }
+}

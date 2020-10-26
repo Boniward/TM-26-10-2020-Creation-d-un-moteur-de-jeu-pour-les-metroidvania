@@ -1,0 +1,36 @@
+// #### -Level 1- ####
+
+// matériel nécessaire pour le niveau
+import
+[
+"assets/scripts/entities/schema.ecs",
+"assets/scripts/entities/player.ecs",
+"assets/scripts/entities/slime.ecs",
+"assets/scripts/entities/pikes.ecs",
+"assets/scripts/entities/gate.ecs",
+"assets/scripts/entities/orc.ecs"
+]
+
+// Création de la map
+map ["level1.map" : "tileset_01.png"]
+
+// Création des entités
+entity [player : Player]{component <transform>{x = 1 y = 5}}
+
+entity [pikes1 : Pikes]{component <transform>{x = 10 y = 6}}
+entity [pikes2 : Pikes]{component <transform>{x = 12 y = 6}}
+entity [pikes3 : Pikes]{component <transform>{x = 13 y = 6}}
+entity [pikes4 : Pikes]{component <transform>{x = 15 y = 6}}
+entity [pikes5 : Pikes]{component <transform>{x = 16 y = 6}}
+
+entity [slime1 : Slime]
+{
+    component <transform>{x = 7 y = 5}
+    component <basicEnemy>{start = 7 distance = 2 speed = 3}
+}
+
+entity [slime2 : Slime]
+{
+    component <transform>{x = 17 y = 5}
+    component <basicEnemy>{start = 17 distance = 3 speed = 3}
+}
